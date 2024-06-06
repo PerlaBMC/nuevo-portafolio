@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/w3images/profile_girl.jpg');
+  min-height: 100%;
+}
+
+#name {
+  color: black;
+  animation: mycolor 3s infinite;
+}
+
+@keyframes mycolor {
+  50% {color: rgba(245, 245, 245, 0.747);}
+}
+
+#dev {
+  position: relative;
+  color:black;
+  top: 0;
+  animation: mymoves infinite 2s ;
+}
+
+@keyframes mymoves {
+  50% {right: 15px;}
+}
+
+
+
+#typewriter {
+  width: 10ch;
+  overflow: hidden;
+  text-align: center;
+  animation: typing 2.5s steps(10)
+  infinite alternate-reverse;
+}
+
+@keyframes typing {
+  from {width: 0ch;}
+  to {width: 10ch;}
+}
+
+/*Skills-------------------------------------------------------------------------------------------------------*/
+
+#DIV2 {
+  scale: 1 1;
+  animation: mymove 12s infinite;
+}
+
+@keyframes mymove {
+  50% {rotate: y 180deg;}
+}
+/*Portafolio-------------------------------------------------------------------------------------------------------*/
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px 50px;
+  padding: 100px 50px;
+}
+
+.container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+  max-width: 100%;
+  height: 300px;
+  background: white;
+  border-radius: 20px;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .card:hover {
+  height: 400px;
+  cursor: pointer;
+}
+
+.container .card .img-box {
+  position: absolute;
+  top: 20px;
+  width: 300px;
+  height: 220px;
+  background: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover .img-box {
+  top: -100px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .content {
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  height: 40px;
+  padding: 0 30px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container .card:hover .content {
+  top: 130px;
+  height: 250px;
+}
+
+.container .card .content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr);
+}
+
+.container .card .content p {
+  color: #333;
+}
+
+.container .card .content a {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  background: var(--clr);
+  color: white;
+  font-weight: 500;
+}
+
+.container .card .content a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .container .card {
+      width: 230px;
+      border-radius: 15px;
+  }
+
+  .container .card .img-box {
+      width: 185px;
+      border-radius: 10px;
+  }
+
+  .container .card .content p {
+      font-size: 0.8rem;
+  }
+
+  .container .card .content a {
+      font-size: 0.9rem;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #DIV2 {
+    width: 50%;
+  }
+}
+
+/*Insignias-------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*About me-------------------------------------------------------------------------------------------------------*/
+
+#foto {
+  scale: 1 1;
+  animation: mymovefoto 3s infinite;
+}
+
+@keyframes mymovefoto {
+  50% {scale: 1 0.95;}
+}
+
+
+.insignias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+.field {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.field label, input {
+  width: 100%;
+}

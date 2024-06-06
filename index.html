@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Perla Mondragón</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml"
+    href="https://images.vexels.com/media/users/3/300003/isolated/preview/57fd43ef19d480d235b45e01dd03932c-colorido-letra-p.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+      <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:50px 16px" id="home">
+      <h1 class="w3-jumbo" id="name"><b>Perla B. Mondragón</b></h1>
+      <div id="dev">
+        <h2>Web Full Stack Developer</h2>
+      </div>
+      <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692046978/Dise%C3%B1o_sin_t%C3%ADtulo_3_cj561x.png"
+        style="display:block;width:30%;margin:auto;">
+      <button class="w3-button w3-light-grey w3-padding-large w3-margin-top" style="border-radius: 10px;">
+        <i class="fa fa-download"></i><a href="./pdf/" target="_blank"> Download Resume</a>
+      </button>
+    </header>
+
+    <!--Skills-->
+    <h2 class="w3-padding-16 " style="text-align: center;">My Skills</h2>
+    <div class="w3-row w3-center  w3-padding-10 w3-section skills">
+      <div class="w3-quarter w3-section" id="DIV2">
+        <img src="https://www.arsys.es/blog/file/uploads/2015/03/HTML5_Logo_512.png" alt="html"
+          style="width: 100px; height: 100px;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="DIV2">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+          alt="css" style="width: 90px; height: 100px;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="DIV2">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"
+          alt="js" style="width: 100px; height: 100px;">
+      </div>
+      <div class="w3-quarter w3-section" id="DIV2">
+        <img src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png" alt="react"
+          style="width: 150px; height: 100px;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="DIV2">
+        <img src="https://midu.dev/images/tags/node.png" alt="node" style="width: 100px; height: 100px;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="DIV2">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
+          alt="mongo" style="width: 150px; height: 100px;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="DIV2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Firebase_Logo.png" alt="firebase"
+          style="width: 160px; height: 120px;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="DIV2">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+          alt="Bootstrap_logo" style="width: 100px; height: 100px;"><br>
+      </div>
+    </div>
+
+
+    <!-- Portfolio Section -->
+    <h2 style="text-align: center; padding-top: 20px;" id="portfolio">Mis proyectos</h2>
+    <div class="container">
+      <div class="card" style="--clr: #009688">
+        <div class="img-box">
+          <img src="./img/ELEMENTOS.svg">
+        </div>
+        <div class="content">
+          <h2 style="color: pink;">MC E-commerce</h2>
+          <p>
+            Proyecto personal que recopila mis conocimiento de Front-end y Back-end, se centra en la distribución de
+            zapatos, joyería y ropa
+          </p>
+          <a href="https://mcsetupropiamoda.com/" target="_blank"
+            style="background-color: pink; border-radius: 10px;">Entra aquí</a>
+        </div>
+      </div>
+      <div class="card" style="--clr: #FF3E7F">
+        <div class="img-box">
+          <img src="./img/AboutUs.jpg">
+        </div>
+        <div class="content">
+          <h2 style="color: rgb(57, 32, 199);">Las Michoacanas</h2>
+          <p>
+            Proyecto para tienda americana especializada en la distribución de productos mexicanos
+          </p>
+          <a href="https://lasmichoacanascolumbus.com/" target="_blank"
+            style="background-color: rgba(16, 59, 248, 0.856); border-radius: 10px;">Entra aquí</a>
+        </div>
+      </div>
+      <div class="card" style="--clr: #03A9F4">
+        <div class="img-box">
+          <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692293300/Proyecto_5_orv2kf.png"
+            alt="Proyecto5">
+        </div>
+        <div class="content">
+          <h2 style="color: fuchsia;">E-commerce</h2>
+          <p>
+            Desarrollo de aplicación FULLSTACK integrando MONGO, EXPRESS, REACT Y NODEJS,
+            en el cual se comercialice un producto vía pagos online utilizando PayPal SandBox
+          </p>
+          <a href="http://perlamc.mcsetupropiamoda.com/" target="_blank"
+            style="background-color: fuchsia; border-radius: 10px;">Entra aquí</a>
+        </div>
+      </div>
+      <div class="card" style="--clr: #FF3E7F">
+        <div class="img-box">
+          <img src="./img/Proyecto-consumoSpaceApp.png">
+        </div>
+        <div class="content">
+          <h2 style="color: rgb(121, 99, 189);">Space App</h2>
+          <p>
+            Aplicación con conexión a API y presentación de datos en una interfaz.
+          </p>
+          <a href="https://proyecto-alura-consumo-de-api.vercel.app/" target="_blank"
+            style="background-color: rgb(109, 81, 155); border-radius: 10px;">Entra aquí</a>
+        </div>
+      </div>
+      <div class="card" style="--clr: #03A9F4">
+        <div class="img-box">
+          <img src="./img/proyecto-alura-juego.png" alt="Proyecto5">
+        </div>
+        <div class="content">
+          <h2 style="color: rgb(58, 6, 58);">Juego "Número secreto"</h2>
+          <p>
+            Este juego es más que divertido; es una aventura que despierta tu creatividad y te desafía a adivinar el
+            número secreto del 1 al 10.
+          </p>
+          <a href="https://proyecto-alura-juego-de-numero-secreto.vercel.app/" target="_blank"
+            style="background-color: rgb(33, 5, 33); border-radius: 10px;">Entra aquí</a>
+        </div>
+      </div>
+      <div class="card" style="--clr: #03A9F4">
+        <div class="img-box">
+          <img src="./img/proyecto-alura-app-videos.png">
+        </div>
+        <div class="content">
+          <h2 style="color: DarkGreen;">Alura Play</h2>
+          <p>
+            Con Alura Plays, tienes acceso a una plataforma que concentra una selección de los mejores videos de Alura
+            para impulsar tu tu camino de aprendizaje como desarrollador.
+          </p>
+          <a href="https://videos-alura-latam.vercel.app/" target="_blank"
+            style="background-color: DarkGreen; border-radius: 10px;">Entra aquí</a>
+        </div>
+      </div>
+      <div class="card" style="--clr: #03A9F4">
+        <div class="img-box">
+          <img src="./img/Proyecto-miOrg.png">
+        </div>
+        <div class="content">
+          <h2 style="color: rgb(61, 156, 169);">Mi Org</h2>
+          <p>
+            Mi org es una plataforma realizada con React Native en la cual puedes conocer a los miembros de una
+            organización de desarrollo y agragar nuevos desde un formulario
+          </p>
+          <a href="https://videos-alura-latam.vercel.app/" target="_blank"
+            style="background-color: rgb(49, 106, 141); border-radius: 10px;">Entra aquí</a>
+        </div>
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <h2 class="w3-padding-16" style="text-align: center;">Insignias digitales</h2>
+    <div class="w3-row w3-center  w3-padding-10 w3-section insignias">
+      <div class="w3-quarter w3-section" id="Insignias" style="order: 1; padding-top: 10px;">
+        <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692299578/3_qeusf9.png" alt="dashboard"
+          style="width:100%; order: 1;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="Insignias" style="order: 2;">
+        <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692299575/4_psk3yr.png" alt="CRUD"
+          style="width:100%; order: 2;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="Insignias" style="order: 3;">
+        <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692299577/6_rjtfzj.png" alt="restauranteApp"
+          style="width:100%; order: 3;">
+      </div>
+      <div class="w3-quarter w3-section" id="Insignias" style="order: 4;">
+        <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692299574/5_dyypmf.png" alt="eCommerce"
+          style="width:100%; order: 4;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="Insignias" style="order: 4;">
+        <img src="./img/Certificacion-logica-de-programacion.png" alt="Logica de programación"
+          style="width:80%; order: 4;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="Insignias" style="order: 4;">
+        <img src="./img/Certificacion-principiante-en-programacion.png" alt="Principiante de programación"
+          style="width:80%; order: 4;"><br>
+      </div>
+      <div class="w3-quarter w3-section" id="Insignias" style="order: 4;">
+        <img src="./img/Certificado-front-end.png" alt="Front End" style="width:80%; order: 4;"><br>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-12" id="about">
+      <h2 style="color: black;">Un Poco de mi</h2>
+      <hr class="w3-opacity">
+      <p style="font-size: 20px; color: black;">¡Hola! Soy Perla, una apasionada desarrolladora web Full Stack con un
+        enfoque único: mi formación en Criminología. Mi camino profesional me ha llevado a explorar la intersección
+        entre la tecnología y la seguridad, permitiéndome construir soluciones digitales robustas mientras aplico mis
+        conocimientos criminológicos para garantizar la integridad y protección de datos.
+        Con sólidas habilidades en HTML, CSS, JavaScript, React y Node.js, disfruto creando experiencias web dinámicas y
+        funcionales que satisfacen tanto a los usuarios como a los estándares de seguridad. Mi experiencia en análisis
+        de seguridad aporta una capa adicional de conocimiento para implementar medidas eficaces en la protección de
+        información confidencial.
+        Ya sea diseñando y desarrollando aplicaciones web atractivas o aplicando enfoques criminológicos para asegurar
+        la integridad de proyectos digitales, mi objetivo es fusionar lo mejor de ambos mundos para ofrecer soluciones
+        integrales y efectivas. Siempre entusiasta por aprender y mejorar, estoy emocionada por seguir contribuyendo al
+        emocionante campo del desarrollo web y la seguridad en línea.
+        ¡Conectemos y exploremos juntos el poder de la tecnología y la seguridad! </p>
+
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <div class="img-container">
+            <img id="foto" src="https://res.cloudinary.com/dujrua0vo/image/upload/v1691975294/evidence_orlzhi.jpg"
+              style="width:100%">
+            <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1691975294/criminolog%C3%ADa_dlkn64.jpg"
+              style="width:100%">
+            <img id="foto" src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692147356/nadar_jsqx1f.jpg"
+              style="width:100%">
+            <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692147358/gym_qapyju.jpg" style="width:100%">
+          </div>
+        </div>
+
+        <div class="w3-half">
+          <div class="img-container">
+            <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692147357/programar_kdnj44.jpg"
+              style="width:100%">
+            <img id="foto" src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692147358/leer_lmpzr8.jpg"
+              style="width:100%">
+            <img src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692147358/movies_tdnwbh.jpg"
+              style="width:100%">
+            <img id="foto"
+              src="https://res.cloudinary.com/dujrua0vo/image/upload/v1692147358/68a3a694-8e0b-43e3-812f-97bee11af893_zurwxf.jpg"
+              style="width:100%">
+          </div>
+        </div>
+        <!-- End photo grid -->
+      </div>
+
+      <!-- End About Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>Contáctame</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Ciudad de México </p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +52 5951215201</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: perlabmc7@gmail.com</p>
+      </div>
+      <p>Envíame tus datos para cotizar</p>
+
+   <div class="Form">
+    <form id="form">
+      <div class="field">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+      </div>
+      <div class="field">
+        <label for="telefono">Telefóno</label>
+        <input type="text" name="telefono" id="telefono">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+      </div>
+      <div class="field">
+        <label for="mensaje">Mensaje</label>
+        <input type="text" name="mensaje" id="mensaje">
+      </div>
+      <input type="submit" id="button" value="Send Email" >
+    </form>
+   </div>
+      
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init("lQ6NvsCqAI2m6by_b")
+      </script>
+
+
+    <script src="script.js"></script>
+      <!-- End Contact Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+      <a href="https://www.linkedin.com/in/perla-mondragon/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <p class="w3-medium">PBMC</p>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+  <script src="./formulario.js"></script>
+</body>
+
+</html>
